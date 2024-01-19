@@ -4,10 +4,15 @@ Web Development Project 2: Client Project Demo
 Project Title: Website for a Software Company
 <br>
 Project Details:
+<br>
 Domain: Web Development
+<br>
 Project Name: Software Website for Techy Software
+<br>
 Level: Intermediate
-Project Requirements:
+<br>
+Project Requirements
+<br>
 1. Attractive UI Design:
 - Utilize gradients to enhance the visual appeal of the website.
 - Use Google Photos of Nexus Software's web product interfaces to create an

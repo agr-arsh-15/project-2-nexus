@@ -1,5 +1,5 @@
 # project-2-nexus
-Web Development Project 2: Client Project Demo
+Web Development Project 2: Client Project Demo;
 Project Title: Website for a Software Company
 Project Details:
 Domain: Web Development

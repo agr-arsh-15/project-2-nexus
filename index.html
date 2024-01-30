@@ -12,13 +12,12 @@
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <div class="navbarFlex">
-                    <a class="navbar-brand" href="#home"><img class="logo" src="logo.png" alt="" width="80px" height="50px"></a>
+                    <a class="navbarList" href="#home"><img class="logo" src="logo.png" alt="" width="80px" height="50px"></a>
                 </div> 
                 <div id="navbar-list-items">  
                     <a class="navbarList" href="#home">Home</a>
                     <a class="navbarList" href="#about">About Us</a>
                     <a class="navbarList" href="#services">Services</a>
-                    <a class="navbarList" href="#feedback">Feedback</a>
                     <a class="navbarList" href="#contact">Contact</a>
                 </div>
             </div>
@@ -109,57 +108,63 @@
         </div>
     </section>
     
-    <form class="feedbackForm" id="feedback">
-        <h2>Send us your feedback!!!</h2>
-        <div class="feedbackContainer">
-            <label>E-mail Id</label>
-            <input type="email" value="E-mail id">
-            <br>
-            <label>Did you achieve your goal?</label>
-            <br>
-            <label>1</label> <input type="range" min="1" max="10" value=""> <label>10</label>
-            
-
-            <br>
-            <label>Do you have any suggestions to make our website better?</label>
-            <input type="text" value="write your feedback here">
-            
-            
+    <section class="containerForms" id="feedback">
+        <div class="formContainer">
+            <h2 class="formHead">Send us your feedback!!!</h2>
+            <form class="form">    
+                <label class="formLabel">E-mail Id</label>
+                <br>
+                <input class="input" type="email" placeholder="E-mail id" required>
+                <br>
+                <label class="formLabel">Did you achieve your goal?</label>
+                <br>
+                <label class="formLabel">1</label> <input class="input" type="range" min="1" max="10" value=""> <label>10</label>
+                <br>
+                <label class="formLabel">Do you have any suggestions to make our website better?</label>
+                <br>
+                <input class="input" id="feedbackInput" type="text" placeholder="write your feedback here">
+                <br>
+                <input class="formSubmit" type="submit" value="Submit">      
+            </form>
         </div>
-    </form>
-    <form class="customerDetailsForm" id="customer">
-        <h2>Customer Details</h2>
-        <div class="customerDetailsContainer">
-            <label>Full Name</label>
-            <br>
-            <input type="text" value="Enter your name">
-            <br>
-            <label>E-mail id</label>
-            <br>
-            <input type="email" value="Enter your e-mail id">
-            <br>
-            <label>Contact no.</label>
-            <br>
-            <input type="number" value="Enter your contact number">
-            <br>
-            <label>Purpose of use?</label>
-            <br>
-            <input type="submit" value="Business">
-            <input type="submit" value="Personal">
-            <input type="submit" value="Other">
+        <div class="formContainer">
+            <h2 class="formHead">Customer Details</h2>
+            <form class="form" id="customer">
+                <label class="formLabel">Full Name</label>
+                <br>
+                <input class="input" type="text" placeholder="Enter your name">
+                <br>
+                <label class="formLabel">E-mail id</label>
+                <br>
+                <input class="input" type="email" placeholder="Enter your e-mail id">
+                <br>
+                <label class="formLabel">Contact no.</label>
+                <br>
+                <input class="input" type="number" placeholder="Enter your contact no.">
+                <br>
+                <label class="formLabel">Purpose of use?</label>
+                <br>
+                <div id="formSubmit">
+                    <input class="formSubmit" type="submit" value="Business">
+                    <input class="formSubmit" type="submit" value="Personal">
+                    <input class="formSubmit" type="submit" value="Other">
+                </div>
+                
+            
+            </form>
         </div>
-    </form>
+    </section>
     <footer class="footer" id="contact">
         <div class="footerTop">
-            <div class="container">
+            <div class="footerContainer">
                 <div class="footerBrand">
-                    <a href=""><img id="footerLogo" src="logo.png" width="80px" height="50px"></a>
-                    <p>From code to classroom and media mastery, Techy empowers excellence across the digital landscape, harmonizing software, learning, and media for a holistic journey into the future.</p>
+                    <a href=""><img id="footerLogo" src="logo.png" width="20%" height="50%"></a>
+                    <p id="footerMessage">From code to classroom and media mastery, Techy empowers excellence across the digital landscape, harmonizing software, learning, and media for a holistic journey into the future.</p>
                 </div>
                 <ul class="footerList">
-                    <li>
-                        <p class="footer-listTitle">Our Services</p>
-                    </li>
+                    
+                    <p class="footer-listTitle">Our Services</p>
+                    
                     <li>
                         <a href="#" class="footerLink">Software & Services</a>
                     </li>
@@ -180,10 +185,10 @@
                     </li>
                 </ul>
                 <ul class="footerList">
-                    <li>
-                        <p class="footer-listTitle">Overview</p>
+                    
+                    <p class="footer-listTitle">Overview</p>
                         
-                    </li>
+                    
                     <li>
                         <a href="#home" class="footerLink">Home</a>
                     </li>
@@ -195,14 +200,14 @@
                     </li>
                 </ul>
                 <ul class="footerList">
+                    
+                    <p class="footer-listTitle">Contact Us</p>
+                
                     <li>
-                        <p class="footer-listTitle">Contact Us</p>
+                        <i class="fa-solid fa-location-dot"></i> <a>Bangalore, Karnataka</a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-location-dot"></i> <a href="#">Bangalore, Karnataka</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i> <a href="#">contact.techysoftware@gmail.com</a>
+                        <i class="fa-solid fa-envelope"></i> <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTJFvRlhDvswXPSMPPfLHwpLXxfkrFnhkFVhZjCSWFwVjjXKLMPQGNwBsMbXSdhFcjZmCL">contact.techysoftware@gmail.com</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-phone"></i> <a href="#">+919846734668</a>
@@ -213,16 +218,12 @@
 
         </div>
         <div class="footerBottom">
-            <div class="container">
+            <div class="bottomContainer">
                 <p>@ 2024 Techy | All rights are reserved by <a href="#">Techy Software</a></p>
-                <ul class="footerBottomList">
-                    <li>
-                        <a href="#">Privacy n Policy</a>
-                    </li>
-                    <li>
-                        <a href="#">Terms n Conditions</a>
-                    </li>
-                </ul>
+                <div>
+                    <a href="#">Privacy n Policy</a>
+                    <a href="#">Terms n Conditions</a>
+                </div>
             </div>
 
         </div>

@@ -56,7 +56,6 @@ html,body {
     
 }
 #homeImage{
-    
     border-radius: 50%;
     margin-left: 3%;
     
@@ -83,8 +82,6 @@ html,body {
     animation-delay: 3s;
     animation-iteration-count: infinite;
 }
-
-
 #homeMessage{
     font-size: 20px;
     font-weight: 500;
@@ -181,15 +178,14 @@ html,body {
     margin-bottom: 1%;
     font-weight: 900;
     color: black;
-    text-
 }
 .containerForms {
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom:5%;
-    margin-top:3%; 
+    margin-bottom: 5%;
+    margin-top: 3%; 
 }
 .formContainer{
     background-image: url(image4.jpg);
@@ -203,8 +199,6 @@ html,body {
     justify-content: center;
     padding:2%;
     margin: auto auto;
-    
-    
 }
 .formHead{
     font-weight: 900;
@@ -275,9 +269,6 @@ html,body {
     text-align: center;
     display: flex;
     flex-direction: column;
-}
-label {
-    margin-bottom: ;
 }
 a {
     text-decoration: none;

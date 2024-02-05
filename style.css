@@ -3,16 +3,18 @@
     margin: 0%;
 }
 html,body {
-    height: 100%;
-    width: 100%;
+    height:auto;
+    width: auto;
     background-color:beige;
+    overflow-x: hidden;
 }
 
 .navbar {
     background-color: rgb(232, 232, 199);
     position: fixed;
+    z-index: 1000;
     width: 100%;
-    height: 15%;
+    height: auto;
     
 }
 .container-fluid{
@@ -27,14 +29,13 @@ html,body {
     padding: 1%;
 }
 #navbar-list-items{
-    
     height: auto;
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-right: 10%;
+    margin-right: 4%;
     padding: 2%;
 }
 .navbarList{
@@ -43,26 +44,34 @@ html,body {
 .navbarList:hover{
     color: blue;
 }
-
-.logo {
-   height: 80px;
-   width: 130px;
+#navbarListHead{
+    font-size:xx-large;
+    font-weight:900;
+    color:rgb(143, 143, 128);
+    margin-top: 5%;
+    font-style: italic;
+    
+     
 }
 .homeContainer{
     text-align: left;
     display: flex;
-    padding:8.5%;
+    padding-top:8.5%;
+    padding-bottom:8.5%;
+    padding-left: 5%;
+    padding-right:5%;
     align-items: center;
     
 }
 #homeImage{
-    border-radius: 50%;
-    margin-left: 3%;
-    
+    border-radius: 30%; 
+}
+.homeImage{
+    height:20;
 }
 #homeWelcome{
     text-align: left;
-    font-size: 20px;
+    font-size: larger;
     font-weight: 900;
     margin-bottom: 1%;
 }
@@ -83,9 +92,10 @@ html,body {
     animation-iteration-count: infinite;
 }
 #homeMessage{
-    font-size: 20px;
+    font-size: large;
     font-weight: 500;
 }
+
 .aboutContainer{
     text-align: left;
     display: flex;
@@ -108,7 +118,7 @@ html,body {
     margin-left: 3%;
 }
 .aboutHead{
-    font-size: 40px;
+    font-size: xx-large;
     color: darkgray;
     margin-bottom: 2%;
     font-weight: 900;
@@ -197,18 +207,18 @@ html,body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:2%;
+    padding:4%;
     margin: auto auto;
 }
 .formHead{
     font-weight: 900;
-    font-size: x-large;
+    font-size: xx-large;
     color: darkgray;
     margin-bottom: 3%;
 }
 .formLabel{
     font-weight: 600;
-    font-size: large;
+    font-size: x-large;
 }
 .formSubmit{
     padding: 1%;
@@ -227,11 +237,12 @@ html,body {
     justify-content: space-evenly;
     margin-top:4%;
 }
-.feedbackLabel{
-    margin-bottom: auto auto;
+#formSubmit:hover{
+    background-color: bisque;
 }
 .input{
     margin-bottom: 5%;
+    font-size: larger;
 }
 #feedbackInput{
     height: 40px;
@@ -240,14 +251,16 @@ html,body {
 }
 .footer {
     background-color: rgb(232, 232, 199);
+    position:sticky;
+    width: 100%;
 }
 .footerContainer {
-    margin: auto auto;
     display: grid;
     grid-template-columns: repeat(2,2fr);
     grid-template-rows: auto auto;
-    gap: 7%;
+    gap: 5%;
     padding: 4%;
+    margin-bottom: 2%;
 }
 #footerMessage{
     font-weight: 700;
@@ -270,6 +283,120 @@ html,body {
     display: flex;
     flex-direction: column;
 }
+@media (max-width:1200px) {
+    .homeContainer{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        text-align: center;
+    }
+    #homeWelcome{
+        text-align: center;
+    }
+    .aboutContainer{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        text-align: center;
+    }
+    #homeImage{
+        margin-top: 5%;
+    }
+    .containerForms{
+        display: flex;
+        flex-direction: column;
+    }
+    #feedbackContainer{
+        margin-bottom: 5%;
+    }
+}
+@media (max-width:850px) {
+    #homeImage{
+        height: 400px;
+        width: 550px;
+    }
+    #aboutImage{
+        height: 400px;
+        width: 550px;
+    }
+    
+}
+@media (max-width:750px){
+    .homeContainer{
+        padding-top: 15%;
+    }
+    .aboutContainer{
+        padding-top: 15%;
+    }
+    .servicesContainer{
+        padding-top: 15%;
+        margin-bottom: 10%;
+    }
+    .footerContainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto auto auto auto;
+        gap: 7%;
+        margin-bottom: 10%;
+    }
+    
+}
+@media (max-width:550px){
+    #navbar-list-items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto auto;
+        gap: 10%;
+        margin-right: 10%;
+        width: 25%;
+    }
+    .footerContainer{
+        margin-bottom: 15%;
+    }
+    .homeContainer{
+        padding-top: 20%;
+    }
+    .aboutContainer{
+        padding-top: 20%;
+    }
+    .servicesContainer{
+        padding-top: 20%;
+        margin-bottom: 15%;
+    }
+    #homeImage{
+        height: 250px;
+        width: 400px;
+    }
+    #aboutImage{
+        height: 250px;
+        width: 400px;
+    }
+    #homeMain{
+        text-align: left;
+        font-size: x-large;
+    }
+}
+@media (max-width:450px){
+    #navbar-list-items{
+        margin-right: 10%;
+        width: 25%;
+    }
+    .footerContainer{
+        margin-bottom: 20%;
+    }
+    .homeContainer{
+        padding-top: 25%;
+    }
+    .aboutContainer{
+        padding-top: 25%;
+    }
+    .servicesContainer{
+        padding-top: 25%;
+        margin-bottom: 25%;
+    }
+   
+}
+
 a {
     text-decoration: none;
     color: grey;
